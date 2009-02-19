@@ -10,7 +10,13 @@
 
 @interface ViewController : UIViewController {
 
+	IBOutlet UILabel *labelOne;
+	IBOutlet UILabel *labelTwo;
+	IBOutlet UILabel *labelThree;
 }
 
-@end
+@property (nonatomic, retain) IBOutlet UILabel *labelOne;
+@property (nonatomic, retain) IBOutlet UILabel *labelTwo;
+@property (nonatomic, retain) IBOutlet UILabel *labelThree;
 
+@end
