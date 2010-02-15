@@ -17,14 +17,14 @@
 - (void)viewDidLoad {
 	
 	// URL for our plist
-	NSURL *plistURL = [NSURL URLWithString:@"http://samsoffes.github.com/iphone-plist/HelloWorld.plist"];
+	NSURL *plistURL = [NSURL URLWithString:@"http://github.com/samsoffes/iphone-plist/raw/master/HelloWorld.plist"];
 	
 	// Initialize our dictionary from the plist on the server
 	NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfURL:plistURL];
 	
 	// Update the view to show that our results
 	
-	// These two keys are strings in the plist which map to NSStrng
+	// These two keys are strings in the plist which map to NSString
 	labelOne.text = [dictionary objectForKey:@"keyOne"];
 	labelTwo.text = [dictionary objectForKey:@"otherCoolKey"];
 	
